@@ -22,4 +22,14 @@
     return self;
 }
 
+-(int)generateMove {
+    
+    return Rock;
+}
+
+-(BOOL)defeats:(RPSTurn*) turn {
+    
+    return false;
+}
+
 @end
