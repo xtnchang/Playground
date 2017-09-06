@@ -17,6 +17,7 @@
 		38AC952E1F5DECFC004CB9E5 /* PlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC952D1F5DECFC004CB9E5 /* PlaygroundTests.m */; };
 		38AC95391F5DECFC004CB9E5 /* PlaygroundUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC95381F5DECFC004CB9E5 /* PlaygroundUITests.m */; };
 		38AC95471F5DEED9004CB9E5 /* RPSTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC95461F5DEED9004CB9E5 /* RPSTurn.m */; };
+		38E0D98E1F60521D00671C6E /* RPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E0D98D1F60521D00671C6E /* RPSController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		38AC953A1F5DECFC004CB9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38AC95461F5DEED9004CB9E5 /* RPSTurn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSTurn.m; sourceTree = "<group>"; };
 		38AC95481F5DEEE5004CB9E5 /* RPSTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSTurn.h; sourceTree = "<group>"; };
+		38E0D98D1F60521D00671C6E /* RPSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSController.m; sourceTree = "<group>"; };
+		38E0D98F1F60522800671C6E /* RPSController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				38AC95171F5DECFC004CB9E5 /* RPSGame.m */,
 				38AC95481F5DEEE5004CB9E5 /* RPSTurn.h */,
 				38AC95461F5DEED9004CB9E5 /* RPSTurn.m */,
+				38E0D98F1F60522800671C6E /* RPSController.h */,
+				38E0D98D1F60521D00671C6E /* RPSController.m */,
 				38AC95191F5DECFC004CB9E5 /* Main.storyboard */,
 				38AC951F1F5DECFC004CB9E5 /* Assets.xcassets */,
 				38AC95211F5DECFC004CB9E5 /* LaunchScreen.storyboard */,
@@ -286,6 +291,7 @@
 				38AC95151F5DECFC004CB9E5 /* AppDelegate.m in Sources */,
 				38AC95471F5DEED9004CB9E5 /* RPSTurn.m in Sources */,
 				38AC95121F5DECFC004CB9E5 /* main.m in Sources */,
+				38E0D98E1F60521D00671C6E /* RPSController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +521,7 @@
 				38AC953F1F5DECFC004CB9E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38AC95401F5DECFC004CB9E5 /* Build configuration list for PBXNativeTarget "PlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +530,7 @@
 				38AC95421F5DECFC004CB9E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38AC95431F5DECFC004CB9E5 /* Build configuration list for PBXNativeTarget "PlaygroundUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +539,7 @@
 				38AC95451F5DECFC004CB9E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -22,12 +22,12 @@
     return self;
 }
 
--(int)generateMove {
+-(Move)generateMove {
     
     return Rock;
 }
 
--(BOOL)defeats:(RPSTurn*) turn {
+-(BOOL)defeats:(RPSTurn*) opponent {
     
     return false;
 }
