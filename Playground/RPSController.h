@@ -16,6 +16,6 @@
 
 @interface RPSController : NSObject
 
--(void)throwDown:(Move) playersMove;
+-(void)throwDown:(Weapon) playersWeapon;
 
 @end

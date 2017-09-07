@@ -11,18 +11,18 @@
 
 @implementation RPSTurn
 
--(instancetype)initWithMove:(Move) move {
+-(instancetype)initWithWeapon:(Weapon) weapon {
     
     self = [super init];
     
     if (self){
-        _move = move;
+        _weapon = weapon;
     }
     
     return self;
 }
 
--(Move)generateMove {
+-(Weapon)generateWeapon {
     
     return Rock;
 }

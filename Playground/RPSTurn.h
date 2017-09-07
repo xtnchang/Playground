@@ -13,7 +13,7 @@
 #endif /* RPSTurn_h */
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, Move) {
+typedef NS_ENUM(NSInteger, Weapon) {
     Rock,
     Paper,
     Scissors
@@ -21,10 +21,10 @@ typedef NS_ENUM(NSInteger, Move) {
 
 @interface RPSTurn : NSObject
 
-@property (nonatomic) Move move;
+@property (nonatomic) Weapon weapon;
 
--(instancetype)initWithMove:(Move) move;
--(int)generateMove;
+-(instancetype)initWithWeapon:(Weapon) weapon;
+-(int)generateWeapon;
 -(BOOL)defeats:(RPSTurn*) turn;
 
 @end

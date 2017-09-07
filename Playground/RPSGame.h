@@ -14,6 +14,6 @@
 @property (nonatomic) RPSTurn *firstTurn;
 @property (nonatomic) RPSTurn *secondTurn;
 
--(instancetype)initWithFirstTurn:(RPSTurn*) playerTurn secondTurn: (RPSTurn*)computerTurn;
+-(instancetype)initWithFirstTurn:(RPSTurn*) playerTurn secondTurn:(RPSTurn*)computerTurn;
 
 @end
