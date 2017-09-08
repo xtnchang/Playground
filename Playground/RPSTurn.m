@@ -60,7 +60,15 @@
 
 -(BOOL)defeats:(RPSTurn*) opponent {
     
-    return false;
+    // human player wins
+    if ((self.weapon == Paper && opponent.weapon == Rock) || (self.weapon == Scissors && opponent.weapon == Paper) || (self.weapon == Rock && opponent.weapon == Scissors)) {
+        
+        return true;
+    } else {
+        
+        // computer wins
+        return false;
+    }
 }
 
 @end
