@@ -22,6 +22,18 @@
     return self;
 }
 
+// Initialize a turn with a random move (for the computer)
+-(instancetype)init {
+    
+    self = [super init];
+    
+    if (self){
+        _weapon = [self generateWeapon];
+    }
+    
+    return self;
+}
+
 // Generate a random weapon for the computer
 -(Weapon)generateWeapon {
     
