@@ -22,7 +22,9 @@
     return self;
 }
 
+// Generate a random weapon for the computer
 -(Weapon)generateWeapon {
+    
     
     return Rock;
 }

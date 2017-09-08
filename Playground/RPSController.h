@@ -12,9 +12,12 @@
 
 #endif /* RPSController_h */
 #import <Foundation/Foundation.h>
-#import "RPSTurn.h"
+#import "RPSTurn.h" // For Weapon object
+#import "RPSGame.h"
 
 @interface RPSController : NSObject
+
+@property (nonatomic) RPSGame *game;
 
 -(void)throwDown:(Weapon) playersWeapon;
 
