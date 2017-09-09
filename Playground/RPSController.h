@@ -20,7 +20,7 @@
 @property (nonatomic) RPSGame *game;
 
 -(void)throwDown:(Weapon) playersWeapon;
--(NSString*)gameResultMessage:(RPSGame*)game;
 -(NSString*)gameResult:(RPSGame*) game;
+-(NSString*)gameResultMessage:(RPSGame*)game;
 
 @end

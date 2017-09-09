@@ -8,9 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "RPSController.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        
+        // Initialize an RPSController
+        RPSController *gameController = [[RPSController alloc] init];
+        
+        // Human enters their weapon of choice as the throwDown argument below.
+        [gameController throwDown: Paper];
+        NSString *resultsMessage = [gameController gameResultMessage: gameController.game];
+        NSLog(@"%@", resultsMessage);
     }
+    
+    return 0;
 }
