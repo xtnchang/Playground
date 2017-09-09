@@ -71,4 +71,18 @@
     }
 }
 
+-(NSString*)description {
+    
+    switch(self.weapon) {
+        case Rock:
+            return @"Rock";
+        case Paper:
+            return @"Paper";
+        case Scissors:
+            return @"Scissors";
+        default:
+            return @"Invalid";
+    }
+}
+
 @end
