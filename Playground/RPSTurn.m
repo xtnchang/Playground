@@ -71,7 +71,7 @@
     }
 }
 
--(NSString*)description {
+-(NSString*)weaponName {
     
     switch(self.weapon) {
         case Rock:

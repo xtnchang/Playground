@@ -25,4 +25,27 @@
     self.game = [[RPSGame alloc]initWithFirstTurn: playersTurn secondTurn: computersTurn];
 }
 
+-(NSString*)gameResult:(RPSGame*)game {
+    return [game.firstTurn defeats:game.secondTurn] ? @"You Win!" : @"You Lose!";
+}
+
+-(NSString*)gameResultMessage:(RPSGame*)game {
+    // First, handle the tie
+    
+    if (game.firstTurn.weapon == game.secondTurn.weapon) {
+        return @"It's a tie!";
+    } else {
+        
+    // Then build up the results message, e.g. "Rock defeats Scissors. You Win!" etc.
+    NSString *winnerString = [[game winner] weaponName];
+    NSString *loserString = [[game loser]  weaponName];
+    NSString *resultsString = [self gameResult: game];
+    
+    // Combine the 3 strings using the NSString method, stringWithFormat:
+    NSString *wholeString =  [NSString stringWithFormat:@"%@ %@ %@ %@ %@", winnerString, @" defeats ", loserString, @".",  resultsString];
+    
+    return wholeString;
+    }
+}
+
 @end
