@@ -16,7 +16,7 @@ int main(int argc, char * argv[]) {
         // Initialize an RPSController
         RPSController *gameController = [[RPSController alloc] init];
         
-        // Human enters their weapon of choice as the throwDown argument below.
+        // Human player enters their weapon of choice as the throwDown argument below.
         [gameController throwDown: Paper];
         NSString *resultsMessage = [gameController gameResultMessage: gameController.game];
         NSLog(@"%@", resultsMessage);
