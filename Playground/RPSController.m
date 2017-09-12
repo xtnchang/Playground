@@ -20,8 +20,7 @@
     RPSTurn *playersTurn = [[RPSTurn alloc]initWithWeapon: playersWeapon];
     RPSTurn *computersTurn = [[RPSTurn alloc] init];
     
-    computersTurn.weapon = playersTurn.weapon;
-    
+    // The RPSGame class stores the results of the game
     self.game = [[RPSGame alloc]initWithFirstTurn: playersTurn secondTurn: computersTurn];
 }
 
@@ -30,8 +29,8 @@
 }
 
 -(NSString*)gameResultMessage:(RPSGame*)game {
-    // First, handle the tie
     
+    // First, handle the tie
     if (game.firstTurn.weapon == game.secondTurn.weapon) {
         return @"It's a tie!";
     } else {
