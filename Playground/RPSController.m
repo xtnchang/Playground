@@ -40,7 +40,8 @@
     NSString *loserString = [[game loser]  weaponName];
     NSString *resultsString = [self gameResult: game];
     
-    // Combine the 3 strings using the NSString method, stringWithFormat:
+    // Combine the 3 strings using the NSString method, stringWithFormat
+    // e.g. "Rock defeats Scissors. You win!"
     NSString *wholeString =  [NSString stringWithFormat:@"%@ %@ %@ %@ %@", winnerString, @" defeats ", loserString, @".",  resultsString];
     
     return wholeString;
