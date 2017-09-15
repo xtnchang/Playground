@@ -58,8 +58,8 @@
     return Rock;
 }
 
-// defeats is a method of the RPSTurn class, and it also takes RPSTurn as an argument. In RPSController.m, defeats is called for the human turn, and the computer turn is passed in as the argument.
--(BOOL)defeats:(RPSTurn*) opponent {
+// checkIfDefeats is a method of the RPSTurn class, and it also takes RPSTurn as an argument. In RPSController.m, checkIfDefeats is called for the human turn, and the computer turn is passed in as the argument.
+-(BOOL)checkIfDefeats:(RPSTurn*) opponent {
     
     // human player wins
     if ((self.weapon == Paper && opponent.weapon == Rock) || (self.weapon == Scissors && opponent.weapon == Paper) || (self.weapon == Rock && opponent.weapon == Scissors)) {
@@ -73,7 +73,7 @@
 }
 
 // Save the weapon string to use later when generating the game result message
--(NSString*)weaponNameString {
+-(NSString*)storeWeaponName {
     
     switch(self.weapon) {
         case Rock:

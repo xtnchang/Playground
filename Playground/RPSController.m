@@ -25,7 +25,7 @@
 }
 
 -(NSString*)determineGameResult:(RPSGame*)game {
-    return [game.firstTurn defeats:game.secondTurn] ? @"You Win!" : @"You Lose!";
+    return [game.firstTurn checkIfDefeats:game.secondTurn] ? @"You Win!" : @"You Lose!";
 }
 
 -(NSString*)generateGameResultMessage:(RPSGame*)game {
@@ -36,8 +36,8 @@
     } else {
         
     // Then build up the results message, e.g. "Rock defeats Scissors. You Win!" etc.
-    NSString *winnerString = [[game determineWinner] weaponNameString];
-    NSString *loserString = [[game determineLoser]  weaponNameString];
+    NSString *winnerString = [[game determineWinner] storeWeaponName];
+    NSString *loserString = [[game determineLoser]  storeWeaponName];
     NSString *resultsString = [self determineGameResult: game];
     
     // Combine the 3 strings using the NSString method, stringWithFormat

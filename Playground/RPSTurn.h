@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, Weapon) {
 
 -(instancetype)initWithWeapon:(Weapon) weapon;
 -(int)generateWeapon;
--(BOOL)defeats:(RPSTurn*) turn;
--(NSString*)weaponNameString;
+-(BOOL)checkIfDefeats:(RPSTurn*) turn;
+-(NSString*)storeWeaponName;
 
 @end

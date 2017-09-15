@@ -23,13 +23,13 @@
     return self;
 }
 
-// We are able to access RPSTurn's defeats method because the defeats method is included in the RPSTurn header file.
+// We are able to access RPSTurn's checkIfDefeats method because the checkIfDefeats method is included in the RPSTurn header file.
 -(RPSTurn*)determineWinner {
-    return [self.firstTurn defeats:self.secondTurn] ? self.firstTurn : self.secondTurn;
+    return [self.firstTurn checkIfDefeats:self.secondTurn] ? self.firstTurn : self.secondTurn;
 }
 
 -(RPSTurn*)determineLoser {
-    return [self.firstTurn defeats:self.secondTurn] ? self.secondTurn : self.firstTurn;
+    return [self.firstTurn checkIfDefeats:self.secondTurn] ? self.secondTurn : self.firstTurn;
 }
 
 @end
