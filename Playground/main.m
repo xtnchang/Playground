@@ -20,8 +20,8 @@ int main(int argc, char * argv[]) {
         [gameController throwDown: Paper];
         
         // Calling gameResultMessage builds the game message string.
-        NSString *resultsMessage = [gameController gameResultMessage: gameController.game];
-        NSLog(@"%@", resultsMessage);
+        NSString *resultMessageToDisplay = [gameController gameResultMessage: gameController.game];
+        NSLog(@"%@", resultMessageToDisplay);
     }
     
     return 0;
