@@ -72,7 +72,8 @@
     }
 }
 
--(NSString*)weaponName {
+// Save the weapon string to use later when generating the game result message
+-(NSString*)weaponNameString {
     
     switch(self.weapon) {
         case Rock:
