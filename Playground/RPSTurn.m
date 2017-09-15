@@ -58,7 +58,7 @@
     return Rock;
 }
 
-// defeats is a method of the RPSTurn class, and it also takes RPSTurn as an argument. In main.m, defeat is called for the human turn, and the computer turn is passed in as the argument.
+// defeats is a method of the RPSTurn class, and it also takes RPSTurn as an argument. In RPSController.m, defeats is called for the human turn, and the computer turn is passed in as the argument.
 -(BOOL)defeats:(RPSTurn*) opponent {
     
     // human player wins
