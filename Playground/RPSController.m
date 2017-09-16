@@ -15,6 +15,10 @@
 // Simultaneously generate an opponent's (computer's) move
 -(void)throwDown:(Weapon) playersWeapon {
     
+    // This method is the meat of the program. In it, we need to do 2 things:
+        // 1) Assign each player a weapon.
+        // 2) Initialize a match (game) between the two players.
+    
     // Take the player's move and generate an instance of RPSTurn representing the opponent's move.
     // Obj-C doesn't infer types like Swift does, so have to specify type (RPSTurn) when instantiating a variable.
     RPSTurn *playersTurn = [[RPSTurn alloc]initWithWeapon: playersWeapon];
