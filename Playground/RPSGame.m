@@ -12,11 +12,11 @@
 // RPSGame represents a match between the 2 players
 @implementation RPSGame
 
--(instancetype)initWithFirstTurn:(RPSTurn*) playerTurn secondTurn:(RPSTurn*)computerTurn {
+-(instancetype)initWithFirstTurn:(RPSTurn*) humanTurn secondTurn:(RPSTurn*)computerTurn {
     self = [super init];
     
     if(self) {
-        _firstTurn = playerTurn;
+        _firstTurn = humanTurn;
         _secondTurn = computerTurn;
     }
     
