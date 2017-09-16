@@ -13,7 +13,7 @@
 
 // Player "throwing down" a move: rock, paper, or scissors
 // Simultaneously generate an opponent's (computer's) move
--(void)throwDown:(Weapon) playersWeapon {
+-(void)throwDown:(Weapon) humansWeapon {
     
     // This method is the meat of the program. In it, we need to do 2 things:
         // 1) Assign each player a weapon.
@@ -21,7 +21,7 @@
     
     // Take the player's move and generate an instance of RPSTurn representing the opponent's move.
     // Obj-C doesn't infer types like Swift does, so have to specify type (RPSTurn) when instantiating a variable.
-    RPSTurn *humansTurn = [[RPSTurn alloc]initWithWeapon: playersWeapon];
+    RPSTurn *humansTurn = [[RPSTurn alloc]initWithWeapon: humansWeapon];
     RPSTurn *computersTurn = [[RPSTurn alloc] init];
     
     // The RPSGame class stores the results of the game
