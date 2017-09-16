@@ -21,11 +21,11 @@
     
     // Take the player's move and generate an instance of RPSTurn representing the opponent's move.
     // Obj-C doesn't infer types like Swift does, so have to specify type (RPSTurn) when instantiating a variable.
-    RPSTurn *playersTurn = [[RPSTurn alloc]initWithWeapon: playersWeapon];
+    RPSTurn *humansTurn = [[RPSTurn alloc]initWithWeapon: playersWeapon];
     RPSTurn *computersTurn = [[RPSTurn alloc] init];
     
     // The RPSGame class stores the results of the game
-    self.game = [[RPSGame alloc]initWithFirstTurn: playersTurn secondTurn: computersTurn];
+    self.game = [[RPSGame alloc]initWithFirstTurn: humansTurn secondTurn: computersTurn];
 }
 
 -(NSString*)determineGameResult:(RPSGame*)game {
