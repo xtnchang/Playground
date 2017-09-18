@@ -1,16 +1,16 @@
 //
-//  RPSTurn.h
+//  RPSMove.h
 //  Playground
 //
 //  Created by Christine Chang on 9/4/17.
 //  Copyright © 2017 Christine Chang. All rights reserved.
 //
 
-#ifndef RPSTurn_h
-#define RPSTurn_h
+#ifndef RPSMove_h
+#define RPSMove_h
 
 
-#endif /* RPSTurn_h */
+#endif /* RPSMove_h */
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, Weapon) {
@@ -20,13 +20,13 @@ typedef NS_ENUM(NSInteger, Weapon) {
     Invalid
 };
 
-@interface RPSTurn : NSObject
+@interface RPSMove : NSObject
 
 @property (nonatomic) Weapon weapon;
 
 -(instancetype)initWithWeapon:(Weapon) weapon;
 -(int)generateWeapon;
--(BOOL)checkIfDefeats:(RPSTurn*) turn;
+-(BOOL)checkIfDefeats:(RPSMove*) turn;
 -(NSString*)storeWeaponName;
 
 @end

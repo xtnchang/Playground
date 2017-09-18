@@ -17,7 +17,7 @@
 		38AC95231F5DECFC004CB9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38AC95211F5DECFC004CB9E5 /* LaunchScreen.storyboard */; };
 		38AC952E1F5DECFC004CB9E5 /* PlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC952D1F5DECFC004CB9E5 /* PlaygroundTests.m */; };
 		38AC95391F5DECFC004CB9E5 /* PlaygroundUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC95381F5DECFC004CB9E5 /* PlaygroundUITests.m */; };
-		38AC95471F5DEED9004CB9E5 /* RPSTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC95461F5DEED9004CB9E5 /* RPSTurn.m */; };
+		38AC95471F5DEED9004CB9E5 /* RPSMove.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC95461F5DEED9004CB9E5 /* RPSMove.m */; };
 		38E0D98E1F60521D00671C6E /* RPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E0D98D1F60521D00671C6E /* RPSController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +57,8 @@
 		38AC95341F5DECFC004CB9E5 /* PlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AC95381F5DECFC004CB9E5 /* PlaygroundUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundUITests.m; sourceTree = "<group>"; };
 		38AC953A1F5DECFC004CB9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38AC95461F5DEED9004CB9E5 /* RPSTurn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSTurn.m; sourceTree = "<group>"; };
-		38AC95481F5DEEE5004CB9E5 /* RPSTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSTurn.h; sourceTree = "<group>"; };
+		38AC95461F5DEED9004CB9E5 /* RPSMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSMove.m; sourceTree = "<group>"; };
+		38AC95481F5DEEE5004CB9E5 /* RPSMove.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSMove.h; sourceTree = "<group>"; };
 		38E0D98D1F60521D00671C6E /* RPSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSController.m; sourceTree = "<group>"; };
 		38E0D98F1F60522800671C6E /* RPSController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,8 +116,8 @@
 				389F6F171F637123001EB0CE /* main.m */,
 				38AC95161F5DECFC004CB9E5 /* RPSGame.h */,
 				38AC95171F5DECFC004CB9E5 /* RPSGame.m */,
-				38AC95481F5DEEE5004CB9E5 /* RPSTurn.h */,
-				38AC95461F5DEED9004CB9E5 /* RPSTurn.m */,
+				38AC95481F5DEEE5004CB9E5 /* RPSMove.h */,
+				38AC95461F5DEED9004CB9E5 /* RPSMove.m */,
 				38E0D98F1F60522800671C6E /* RPSController.h */,
 				38E0D98D1F60521D00671C6E /* RPSController.m */,
 				38AC95191F5DECFC004CB9E5 /* Main.storyboard */,
@@ -292,7 +292,7 @@
 				38AC951E1F5DECFC004CB9E5 /* Playground.xcdatamodeld in Sources */,
 				38AC95181F5DECFC004CB9E5 /* RPSGame.m in Sources */,
 				38AC95151F5DECFC004CB9E5 /* AppDelegate.m in Sources */,
-				38AC95471F5DEED9004CB9E5 /* RPSTurn.m in Sources */,
+				38AC95471F5DEED9004CB9E5 /* RPSMove.m in Sources */,
 				38AC95121F5DECFC004CB9E5 /* main.m in Sources */,
 				389F6F181F637123001EB0CE /* main.m in Sources */,
 				38E0D98E1F60521D00671C6E /* RPSController.m in Sources */,

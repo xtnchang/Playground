@@ -1,5 +1,5 @@
 //
-//  RPSTurn.m
+//  RPSMove.m
 //  Playground
 //
 //  Created by Christine Chang on 9/4/17.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RPSTurn.h"
+#import "RPSMove.h"
 
-@implementation RPSTurn
+@implementation RPSMove
 
 -(instancetype)initWithWeapon:(Weapon) weapon {
     
@@ -58,8 +58,8 @@
     return Rock;
 }
 
-// checkIfDefeats is a method of the RPSTurn class, and it also takes RPSTurn as an argument. In RPSController.m, checkIfDefeats is called for the human turn, and the computer turn is passed in as the argument.
--(BOOL)checkIfDefeats:(RPSTurn*) opponent {
+// checkIfDefeats is a method of the RPSMove class, and it also takes RPSMove as an argument. In RPSController.m, checkIfDefeats is called for the human turn, and the computer turn is passed in as the argument.
+-(BOOL)checkIfDefeats:(RPSMove*) opponent {
     
     // human player wins
     if ((self.weapon == Paper && opponent.weapon == Rock) || (self.weapon == Scissors && opponent.weapon == Paper) || (self.weapon == Rock && opponent.weapon == Scissors)) {

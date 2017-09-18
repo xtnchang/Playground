@@ -19,23 +19,23 @@
         // 1) Assign each player a weapon.
         // 2) Initialize a match (game) between the two players.
     
-    // Take the player's move and generate an instance of RPSTurn representing the opponent's move.
-    // Obj-C doesn't infer types like Swift does, so have to specify type (RPSTurn) when instantiating a variable.
-    RPSTurn *humansTurn = [[RPSTurn alloc]initWithWeapon: humansWeapon];
-    RPSTurn *computersTurn = [[RPSTurn alloc] init];
+    // Take the player's move and generate an instance of RPSMove representing the opponent's move.
+    // Obj-C doesn't infer types like Swift does, so have to specify type (RPSMove) when instantiating a variable.
+    RPSMove *humansMove = [[RPSMove alloc] initWithWeapon: humansWeapon];
+    RPSMove *computersMove = [[RPSMove alloc] init];
     
     // The RPSGame class stores the results of the game
-    self.game = [[RPSGame alloc]initWithFirstTurn: humansTurn secondTurn: computersTurn];
+    self.game = [[RPSGame alloc] initWithFirstMove: humansMove secondMove: computersMove];
 }
 
 -(NSString*)determineGameResult:(RPSGame*)game {
-    return [game.firstTurn checkIfDefeats:game.secondTurn] ? @"You Win!" : @"You Lose!";
+    return [game.humansMove checkIfDefeats:game.computersMove] ? @"You Win!" : @"You Lose!";
 }
 
 -(NSString*)generateGameResultMessage:(RPSGame*)game {
     
     // First, handle the tie
-    if (game.firstTurn.weapon == game.secondTurn.weapon) {
+    if (game.humansMove.weapon == game.computersMove.weapon) {
         return @"It's a tie!";
     } else {
         

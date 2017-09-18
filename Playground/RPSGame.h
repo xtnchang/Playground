@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RPSTurn.h"
+#import "RPSMove.h"
 
 @interface RPSGame : NSObject
 
-@property (nonatomic) RPSTurn *firstTurn;
-@property (nonatomic) RPSTurn *secondTurn;
+@property (nonatomic) RPSMove *humansMove;
+@property (nonatomic) RPSMove *computersMove;
 
--(instancetype)initWithFirstTurn:(RPSTurn*) humanTurn secondTurn:(RPSTurn*)computerTurn;
--(RPSTurn*)determineWinner;
--(RPSTurn*)determineLoser;
+-(instancetype)initWithFirstMove:(RPSMove*) humansMove secondMove:(RPSMove*)computersMove;
+-(RPSMove*)determineWinner;
+-(RPSMove*)determineLoser;
 
 @end

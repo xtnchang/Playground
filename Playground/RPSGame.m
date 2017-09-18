@@ -12,24 +12,24 @@
 // RPSGame represents a match between the 2 players
 @implementation RPSGame
 
--(instancetype)initWithFirstTurn:(RPSTurn*) humanTurn secondTurn:(RPSTurn*)computerTurn {
+-(instancetype)initWithFirstMove:(RPSMove*) humansMove secondMove:(RPSMove*)computersMove {
     self = [super init];
     
     if(self) {
-        _firstTurn = humanTurn;
-        _secondTurn = computerTurn;
+        _humansMove = humansMove;
+        _computersMove = computersMove;
     }
     
     return self;
 }
 
-// We are able to access RPSTurn's checkIfDefeats method because the checkIfDefeats method is included in the RPSTurn header file.
--(RPSTurn*)determineWinner {
-    return [self.firstTurn checkIfDefeats:self.secondTurn] ? self.firstTurn : self.secondTurn;
+// We are able to access RPSMove's checkIfDefeats method because the checkIfDefeats method is included in the RPSMove header file.
+-(RPSMove*)determineWinner {
+    return [self.humansMove checkIfDefeats:self.computersMove] ? self.humansMove : self.computersMove;
 }
 
--(RPSTurn*)determineLoser {
-    return [self.firstTurn checkIfDefeats:self.secondTurn] ? self.secondTurn : self.firstTurn;
+-(RPSMove*)determineLoser {
+    return [self.humansMove checkIfDefeats:self.computersMove] ? self.computersMove : self.humansMove;
 }
 
 @end
